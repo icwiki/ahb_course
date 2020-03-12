@@ -2,7 +2,7 @@
 //                 Copyright (c) 2020 .
 //                       ALL RIGHTS RESERVED
 // -----------------------------------------------------------------
-// Filename      : cmsdk_ahb_eg_slave_interface.v
+// Filename      : ahb_slave.v
 // Author        : 
 // Created On    : 2020-03-12 06:31
 // Last Modified : 
@@ -11,7 +11,7 @@
 //
 //
 // -FHDR------------------------------------------------------------
-module cmsdk_ahb_eg_slave_interface #(
+module ahb_slave #(
   //parameter for address width
   parameter   ADDRWIDTH=12)
  (
