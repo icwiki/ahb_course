@@ -213,7 +213,7 @@ module ahb_master(hbusreq_o,
 
     always @(posedge hclk_i)
         if (~irst_n)
-            {rd_data_r[0],rd_data_r[1],rd_data_r[2],rd_data_r[3]} <= 32'd0;
+            {rd_data_r[0],rd_data_r[1],rd_data_r[2],rd_data_r[3]} <= 128'd0;
         else if (main_fsm_r == S1 & (fsm_rd_rd || fsm_rd_lrd) & hready_i)
             rd_data_r <= hrdata_i;
     
